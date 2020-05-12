@@ -1,2 +1,3 @@
 # Semana_de_Data_Science
 Este repositório é destinado a armazenar os exercícios realizados, nas aulas da semana de Data Science, do canal Minerando Dados.Ao final dessa semana de aprendizado será realizado a construção de um app, para a previsão de preços, de imóveis de acordo com determinadas características, do bairro, população, comercio e outros....
+https://gist.githubusercontent.com/MagdaSousa/a2ebf60a69b544cea38031ac86e5455d/raw/23905b85b315997ec699366fc2c6445bfaabc4f2/relatoria_da_aula_de_data_science.html
