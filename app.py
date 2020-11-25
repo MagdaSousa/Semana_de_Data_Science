@@ -2,11 +2,11 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 from sklearn.ensemble import RandomForestRegressor
-import folium
 
 
 
-# meu primeiro mapa
+
+
 
 # função para carregar o dataset
 @st.cache
@@ -81,7 +81,7 @@ chas = st.sidebar.selectbox("Faz limite com o rio?",("Sim","Não"))
 # transformando o dado de entrada em valor binário
 chas = 1 if chas == "Sim" else 0
 
-b = st.sidebar.number_input("Proporção de pessoas com descendencia afro-americana",value=data.B.mean())
+
 
 nox = st.sidebar.number_input("Concentração de óxido nítrico", value=data.NOX.mean())
 
@@ -96,7 +96,7 @@ btn_predict = st.sidebar.button("Realizar Predição")
 
 # verifica se o botão foi acionado
 if btn_predict:
-    result = model.predict([[crim,indus,chas,nox,rm,ptratio,b,lstat]])
+    result = model.predict([[crim,indus,chas,nox,rm,ptratio,lstat]])
     st.subheader("O valor previsto para o imóvel é:")
     result = "US $ "+str(round(result[0]*10,3))
     st.write(result)
